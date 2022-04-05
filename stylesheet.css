@@ -1,0 +1,135 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+  
+a {
+    text-decoration: none;
+}
+
+.titulo {
+  background-color: rgb(29, 117, 222);
+  padding-bottom: 50px;
+  width: 100%;
+  height: 200px;
+}
+
+h1 {
+    padding-top: 70px;
+}
+
+
+
+.content {
+    width: 95%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+  
+.tabla h2 {
+    font-size: 25px;
+    padding: 35px 10px;
+    margin: 0;
+}
+  
+.descripcion {
+    margin-top: 20px;
+    font-size: 13px;
+    padding: 0 40px;
+    font-style: italic;
+}
+  
+.descripcion {
+    margin-top: 20px;
+    font-size: 13px;
+    padding: 0 40px;
+    font-style: italic;
+}
+  
+.precio , .tabla {
+    transition: all ease-out 0.2s;
+}
+  
+.precio {
+    background: rgb(29, 117, 222);
+    color: white;
+    font-size: 32px;
+    font-weight: 600px;
+    position: relative;
+    padding: 20px 10px;
+    display: block;
+}
+  
+.tabla:nth-child(2) .precio {
+    background: rgb(29, 117, 222);
+}
+  
+.tabla:nth-child(3) .precio {
+    background: rgb(29, 117, 222);
+}
+  
+.tabla:hover .precio {
+    background: black;
+    box-shadow: inset 0 0 100px 0 rgba(0, 0, 0, 0.3);
+    color: whitesmoke;
+}
+  
+.boton {
+    background: black;
+    border: 1px solid black;
+    color: whitesmoke;
+    border-radius: 30px;
+    padding: 7px 40px;
+    display: inline-block;
+    margin-top: 20px;
+}
+  
+.boton:hover {
+    background: rgb(30, 215, 96);
+    border: 1px solid rgb(30, 215, 96);
+    color: black;
+}
+
+  
+.tablaOverall {
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap:20px;
+    text-align:center;
+}
+  
+  
+.tabla {
+    border-radius: 10px;
+    border: 2px solid black;
+}
+  
+.tabla:hover {
+    transform: scale(1);
+}
+  
+.tablaOverall ul li {
+    padding: 3px 0;
+    font-size: 15px;
+}
+  
+.tablaOverall ul {
+    color: black;
+    padding: 15px 60px;
+    text-align: left;
+}
+  
+@media (max-width: 750px) {
+    .tablaOverall {
+      grid-template-columns: 1fr;
+    }
+    .tablaOverall > div:nth-child(3) {
+      grid-row-start: 1;
+    }
+    .tablaOverall > div:nth-child(2) {
+      grid-row-start: 2;
+    }
+  }

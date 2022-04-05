@@ -1,0 +1,356 @@
+
+@mixin boton-inicio {
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin: 0 15px;
+    perspective: 1000px;
+}
+
+@mixin boton-inicio-a {
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin boton-inicio-after-before {
+    position: absolute;
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+@mixin boton-inicio-before {
+    color: whitesmoke;
+    background: black;
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+@mixin boton-inicio-after {
+    color: black;
+    transform: rotateX(90deg) translateZ(25px);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+
+.head {
+    background-color: rgb(29, 117, 222);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.Descripcion {
+    background-color: rgb(29, 117, 222);
+    width: 600px;
+    height: 200px; 
+    margin-top: 80px;
+    border-radius: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Descripcion:hover {
+    background-color: black;
+    color: rgb(29, 117, 222);
+}
+
+.NuestroEquipo {
+  background-color: rgb(29, 117, 222);
+  color: black;
+  width: 70%;
+  margin-left: 220px;
+  margin-top:20px;
+
+}
+
+.Imagenes {
+    display: flex;
+    align-items: center;
+    padding-left:200px;
+    margin-top: 100px;
+}
+
+.Horarios {
+background-color: rgb(29, 117, 222);
+height: 125px;
+text-align: center;
+margin-top: 200px;
+margin-left: 250px;
+font-weight: bold;
+font-size: 15px;
+
+}
+
+.gmap_canvas {
+    margin-top: 100px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 20px solid rgb(29, 117, 222);
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgb(29, 117, 222);
+}
+
+.navText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.botonInicio{
+    @include boton-inicio;
+  }
+  .botonInicio a{
+    @include boton-inicio-a
+    
+  }
+  .botonInicio a:before,
+  .botonInicio a:after{
+    content: "INICIO";
+    @include boton-inicio-after-before
+  }
+  .botonInicio a:before{
+    @include boton-inicio-before
+  }
+  .botonInicio a:after{
+    @include boton-inicio-after
+  }
+
+  .botonInicio a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);  
+  }
+
+
+  .botonPlanes{
+    @include boton-inicio;
+  }
+  .botonPlanes a{
+    @include boton-inicio-a
+    
+  }
+  .botonPlanes a:before,
+  .botonPlanes a:after{
+    content: "PLANES";
+    @include boton-inicio-after-before
+  }
+  .botonPlanes a:before{
+    @include boton-inicio-before
+  }
+  .botonPlanes a:after{
+    @include boton-inicio-after
+  }
+
+  .botonPlanes a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);  
+  }
+
+  .botonQuienesSomos{
+    @include boton-inicio;
+  }
+  .botonQuienesSomos a{
+    @include boton-inicio-a
+    
+  }
+  .botonQuienesSomos a:before,
+  .botonQuienesSomos a:after{
+    content: "QUIENES SOMOS";
+    @include boton-inicio-after-before
+  }
+  .botonQuienesSomos a:before{
+    @include boton-inicio-before
+  }
+  .botonQuienesSomos a:after{
+    @include boton-inicio-after
+  }
+
+  .botonQuienesSomos a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);  
+  }
+
+  .botonDondeEncontrarnos{
+    @include boton-inicio;
+  }
+  .botonDondeEncontrarnos a{
+    @include boton-inicio-a
+    
+  }
+  .botonDondeEncontrarnos a:before,
+  .botonDondeEncontrarnos a:after{
+    content: "DONDE ENCONTRARNOS";
+    @include boton-inicio-after-before
+  }
+  .botonDondeEncontrarnos a:before{
+    @include boton-inicio-before
+  }
+  .botonDondeEncontrarnos a:after{
+    @include boton-inicio-after
+  }
+
+  .botonDondeEncontrarnos a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);  
+  }
+
+  .botonDescarga{
+    @include boton-inicio;
+  }
+  .botonDescarga a{
+    @include boton-inicio-a
+    
+  }
+  .botonDescarga a:before,
+  .botonDescarga a:after{
+    content: "DESCARGA";
+    @include boton-inicio-after-before
+  }
+  .botonDescarga a:before{
+    @include boton-inicio-before
+  }
+  .botonDescarga a:after{
+    @include boton-inicio-after
+  }
+
+    .botonDescarga a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);  
+    }
+
+.headerDescarga {
+  background-color: rgb(29, 117, 222);
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  height: 150px;
+}
+
+.textoDescarga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.imagenDescarga {
+  margin-top: 120px;
+  width: 350px;
+  height: 180px;
+}
+
+.grid-item.center {
+  align-items: center;
+}
+
+.four-column .grid-item {
+  flex: 0 0 25%;
+  max-width: 25%
+}
+
+.grid-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 12px;
+}
+
+.center {
+  align-items: center;
+}
+
+.lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.device {
+  width: 300px;
+  height: 150px;
+  background-color: rgb(29, 117, 222);
+}
+
+.tituloDispositivo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+list-style-type: none;
+}
+
+.textoDescarga {
+  font-size: 55px;
+  font-weight: bold;
+  margin-left: 120px;
+}
+.boton , .textoDescarga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+button {
+  display: block;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: var(--light);
+  width: 400px;
+  height: 70px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  background-size: 100% 100%;
+  box-shadow: 0 0 0 7px var(--light) inset;
+  margin-bottom: 15px;
+}
+
+button:hover {
+  background-image: linear-gradient(
+    145deg,
+    transparent 10%,
+    var(--dark) 10% 20%,
+    transparent 20% 30%,
+    var(--dark) 30% 40%,
+    transparent 40% 50%,
+    var(--dark) 50% 60%,
+    transparent 60% 70%,
+    var(--dark) 70% 80%,
+    transparent 80% 90%,
+    var(--dark) 90% 100%
+  );
+  animation: background 3s linear infinite;
+}
+
+@keyframes background {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}

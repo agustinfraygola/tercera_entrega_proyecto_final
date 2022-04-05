@@ -1,0 +1,578 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 15px;
+}
+
+.head {
+  background-color: #1d75de;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.Descripcion {
+  background-color: #1d75de;
+  width: 600px;
+  height: 200px;
+  margin-top: 80px;
+  border-radius: 5%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Descripcion:hover {
+  background-color: black;
+  color: #1d75de;
+}
+
+.NuestroEquipo {
+  background-color: #1d75de;
+  color: black;
+  width: 70%;
+  margin-left: 220px;
+  margin-top: 20px;
+}
+
+.Imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 200px;
+  margin-top: 100px;
+}
+
+.Horarios {
+  background-color: #1d75de;
+  height: 125px;
+  text-align: center;
+  margin-top: 200px;
+  margin-left: 250px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.gmap_canvas {
+  margin-top: 100px;
+  margin-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 20px solid #1d75de;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background-color: #1d75de;
+}
+
+.navText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.botonInicio {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.botonInicio a {
+  font-size: 19px;
+  letter-spacing: 1px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(-25px);
+          transform: translateZ(-25px);
+  -webkit-transition: -webkit-transform .25s;
+  transition: -webkit-transform .25s;
+  transition: transform .25s;
+  transition: transform .25s, -webkit-transform .25s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.botonInicio a:before,
+.botonInicio a:after {
+  content: "INICIO";
+  position: absolute;
+  height: 55px;
+  width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 5px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.botonInicio a:before {
+  color: whitesmoke;
+  background: black;
+  -webkit-transform: rotateY(0deg) translateZ(25px);
+          transform: rotateY(0deg) translateZ(25px);
+}
+
+.botonInicio a:after {
+  color: black;
+  -webkit-transform: rotateX(90deg) translateZ(25px);
+          transform: rotateX(90deg) translateZ(25px);
+}
+
+.botonInicio a:hover {
+  -webkit-transform: translateZ(-25px) rotateX(-90deg);
+          transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.botonPlanes {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.botonPlanes a {
+  font-size: 19px;
+  letter-spacing: 1px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(-25px);
+          transform: translateZ(-25px);
+  -webkit-transition: -webkit-transform .25s;
+  transition: -webkit-transform .25s;
+  transition: transform .25s;
+  transition: transform .25s, -webkit-transform .25s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.botonPlanes a:before,
+.botonPlanes a:after {
+  content: "PLANES";
+  position: absolute;
+  height: 55px;
+  width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 5px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.botonPlanes a:before {
+  color: whitesmoke;
+  background: black;
+  -webkit-transform: rotateY(0deg) translateZ(25px);
+          transform: rotateY(0deg) translateZ(25px);
+}
+
+.botonPlanes a:after {
+  color: black;
+  -webkit-transform: rotateX(90deg) translateZ(25px);
+          transform: rotateX(90deg) translateZ(25px);
+}
+
+.botonPlanes a:hover {
+  -webkit-transform: translateZ(-25px) rotateX(-90deg);
+          transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.botonQuienesSomos {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.botonQuienesSomos a {
+  font-size: 19px;
+  letter-spacing: 1px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(-25px);
+          transform: translateZ(-25px);
+  -webkit-transition: -webkit-transform .25s;
+  transition: -webkit-transform .25s;
+  transition: transform .25s;
+  transition: transform .25s, -webkit-transform .25s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.botonQuienesSomos a:before,
+.botonQuienesSomos a:after {
+  content: "QUIENES SOMOS";
+  position: absolute;
+  height: 55px;
+  width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 5px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.botonQuienesSomos a:before {
+  color: whitesmoke;
+  background: black;
+  -webkit-transform: rotateY(0deg) translateZ(25px);
+          transform: rotateY(0deg) translateZ(25px);
+}
+
+.botonQuienesSomos a:after {
+  color: black;
+  -webkit-transform: rotateX(90deg) translateZ(25px);
+          transform: rotateX(90deg) translateZ(25px);
+}
+
+.botonQuienesSomos a:hover {
+  -webkit-transform: translateZ(-25px) rotateX(-90deg);
+          transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.botonDondeEncontrarnos {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.botonDondeEncontrarnos a {
+  font-size: 19px;
+  letter-spacing: 1px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(-25px);
+          transform: translateZ(-25px);
+  -webkit-transition: -webkit-transform .25s;
+  transition: -webkit-transform .25s;
+  transition: transform .25s;
+  transition: transform .25s, -webkit-transform .25s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.botonDondeEncontrarnos a:before,
+.botonDondeEncontrarnos a:after {
+  content: "DONDE ENCONTRARNOS";
+  position: absolute;
+  height: 55px;
+  width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 5px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.botonDondeEncontrarnos a:before {
+  color: whitesmoke;
+  background: black;
+  -webkit-transform: rotateY(0deg) translateZ(25px);
+          transform: rotateY(0deg) translateZ(25px);
+}
+
+.botonDondeEncontrarnos a:after {
+  color: black;
+  -webkit-transform: rotateX(90deg) translateZ(25px);
+          transform: rotateX(90deg) translateZ(25px);
+}
+
+.botonDondeEncontrarnos a:hover {
+  -webkit-transform: translateZ(-25px) rotateX(-90deg);
+          transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.botonDescarga {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.botonDescarga a {
+  font-size: 19px;
+  letter-spacing: 1px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(-25px);
+          transform: translateZ(-25px);
+  -webkit-transition: -webkit-transform .25s;
+  transition: -webkit-transform .25s;
+  transition: transform .25s;
+  transition: transform .25s, -webkit-transform .25s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.botonDescarga a:before,
+.botonDescarga a:after {
+  content: "DESCARGA";
+  position: absolute;
+  height: 55px;
+  width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 5px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.botonDescarga a:before {
+  color: whitesmoke;
+  background: black;
+  -webkit-transform: rotateY(0deg) translateZ(25px);
+          transform: rotateY(0deg) translateZ(25px);
+}
+
+.botonDescarga a:after {
+  color: black;
+  -webkit-transform: rotateX(90deg) translateZ(25px);
+          transform: rotateX(90deg) translateZ(25px);
+}
+
+.botonDescarga a:hover {
+  -webkit-transform: translateZ(-25px) rotateX(-90deg);
+          transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.headerDescarga {
+  background-color: #1d75de;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  height: 150px;
+}
+
+.textoDescarga {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.imagenDescarga {
+  margin-top: 120px;
+  width: 350px;
+  height: 180px;
+}
+
+.grid-item.center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.four-column .grid-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.grid-item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  padding: 12px;
+}
+
+.center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lista {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.device {
+  width: 300px;
+  height: 150px;
+  background-color: #1d75de;
+}
+
+.tituloDispositivo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.textoDescarga {
+  font-size: 55px;
+  font-weight: bold;
+  margin-left: 120px;
+}
+
+.boton, .textoDescarga {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: var(--light);
+  width: 400px;
+  height: 70px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  background-size: 100% 100%;
+  -webkit-box-shadow: 0 0 0 7px var(--light) inset;
+          box-shadow: 0 0 0 7px var(--light) inset;
+  margin-bottom: 15px;
+}
+
+button:hover {
+  background-image: linear-gradient(145deg, transparent 10%, var(--dark) 10% 20%, transparent 20% 30%, var(--dark) 30% 40%, transparent 40% 50%, var(--dark) 50% 60%, transparent 60% 70%, var(--dark) 70% 80%, transparent 80% 90%, var(--dark) 90% 100%);
+  -webkit-animation: background 3s linear infinite;
+          animation: background 3s linear infinite;
+}
+
+@-webkit-keyframes background {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+@keyframes background {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+/*# sourceMappingURL=index.css.map */
