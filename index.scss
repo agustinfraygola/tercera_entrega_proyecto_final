@@ -245,7 +245,7 @@ nav {
   height: 150px;
 }
 
-.textoDescarga {
+.textoDescarga , .h2dispositivo , .subtexto {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -317,7 +317,6 @@ button {
   cursor: pointer;
   outline: none;
   border: none;
-  background-color: var(--light);
   width: 400px;
   height: 70px;
   border-radius: 30px;

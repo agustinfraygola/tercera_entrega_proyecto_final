@@ -5,6 +5,11 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.navbotones {
+    display: flex;
+    justify-content: space-around;
+}
+
 .header {
     background-color: rgb(29, 117, 222);
     display: flex;
